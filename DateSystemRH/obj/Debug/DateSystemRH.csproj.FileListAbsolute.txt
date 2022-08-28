@@ -1,0 +1,7 @@
+C:\Users\dalvares\documents\visual studio 2015\Projects\DateSystemRH\DateSystemRH\obj\Debug\DateSystemRH.FormPrincipal.resources
+C:\Users\dalvares\documents\visual studio 2015\Projects\DateSystemRH\DateSystemRH\obj\Debug\DateSystemRH.FormFichaSolicitacaoEmprego.resources
+C:\Users\dalvares\documents\visual studio 2015\Projects\DateSystemRH\DateSystemRH\obj\Debug\DateSystemRH.Properties.Resources.resources
+C:\Users\dalvares\documents\visual studio 2015\Projects\DateSystemRH\DateSystemRH\obj\Debug\DateSystemRH.csproj.GenerateResource.Cache
+C:\Users\dalvares\documents\visual studio 2015\Projects\DateSystemRH\DateSystemRH\bin\Debug\DateSystemRH.exe.config
+C:\Users\dalvares\documents\visual studio 2015\Projects\DateSystemRH\DateSystemRH\bin\x86\Debug\DateSystemRH.exe.config
+C:\Users\dalvares\documents\visual studio 2015\Projects\DateSystemRH\DateSystemRH\obj\Debug\DateSystemRH.csprojResolveAssemblyReference.cache

@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF838164-63A0-409F-A46C-A5035B6C430E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DateSystemRH</RootNamespace>
+    <AssemblyName>DateSystemRH</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\ArquivoServer\SERVIDOR ARQUIVOS\Sistema DateSystemRH\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\ArquivoServer\SERVIDOR ARQUIVOS\Sistema DateSystemRH\</UpdateUrl>
+    <TargetCulture>pt-BR</TargetCulture>
+    <MinimumRequiredVersion>1.0.0.1</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DateSystemRH.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C720A7EBB38BAD0A88715520C907909803C71BB2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>DateSystemRH.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Des.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\CadastraUsuario.cs" />
+    <Compile Include="Class\CadastroLoginNovo.cs" />
+    <Compile Include="Class\CepCadastraUsuario.cs" />
+    <Compile Include="Class\CandidatosPSeletivo.cs" />
+    <Compile Include="Class\AcessoBaseDados.cs" />
+    <Compile Include="Class\Avaliacao.cs" />
+    <Compile Include="Class\CadastroEmpresaCliente.cs" />
+    <Compile Include="Class\Conexao2.cs" />
+    <Compile Include="Class\DadosPessoas.cs" />
+    <Compile Include="Class\DALDateSystemRH.cs" />
+    <Compile Include="Class\Escolaridade.cs" />
+    <Compile Include="Class\ExEmpregado.cs" />
+    <Compile Include="Class\FichaImagem.cs" />
+    <Compile Include="FormCadastraUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastraUsuario.Designer.cs">
+      <DependentUpon>FormCadastraUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFotoFicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFotoFicha.Designer.cs">
+      <DependentUpon>FormFotoFicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoginUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoginUsuario.Designer.cs">
+      <DependentUpon>FormLoginUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNovasAtualizacoesTelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNovasAtualizacoesTelaPrincipal.Designer.cs">
+      <DependentUpon>FormNovasAtualizacoesTelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTelaPrincipal.Designer.cs">
+      <DependentUpon>FormTelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmpresaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmpresaCliente.Designer.cs">
+      <DependentUpon>FormEmpresaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmpresaClienteEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmpresaClienteEditar.Designer.cs">
+      <DependentUpon>FormEmpresaClienteEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFichaSolicitacaoEmprego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFichaSolicitacaoEmprego.Designer.cs">
+      <DependentUpon>FormFichaSolicitacaoEmprego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFichaSolicitacaoEmpregoEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFichaSolicitacaoEmpregoEditar.Designer.cs">
+      <DependentUpon>FormFichaSolicitacaoEmpregoEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPesquisaEmpresaCadastradaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPesquisaEmpresaCadastradaCliente.Designer.cs">
+      <DependentUpon>FormPesquisaEmpresaCadastradaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPesquisaFichaSolicitacaoEmprego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPesquisaFichaSolicitacaoEmprego.Designer.cs">
+      <DependentUpon>FormPesquisaFichaSolicitacaoEmprego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPesquisaProcessoSelecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPesquisaProcessoSelecao.Designer.cs">
+      <DependentUpon>FormPesquisaProcessoSelecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProcessoSelecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcessoSelecao.Designer.cs">
+      <DependentUpon>FormProcessoSelecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Informacoes.cs" />
+    <Compile Include="Class\PassagemCriminal.cs" />
+    <Compile Include="Class\ProcessoSeletivo.cs" />
+    <Compile Include="Class\Profissionais.cs" />
+    <Compile Include="Class\Profissional2.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="FormProcessoSelecaoEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProcessoSelecaoEditar.Designer.cs">
+      <DependentUpon>FormProcessoSelecaoEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVerificadoCpfRg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVerificadoCpfRg.Designer.cs">
+      <DependentUpon>FormVerificadoCpfRg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\FuncionarioRh.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Class\TelaPrincipalNovaAtualizacaoTexto.cs" />
+    <EmbeddedResource Include="FormCadastraUsuario.resx">
+      <DependentUpon>FormCadastraUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFotoFicha.resx">
+      <DependentUpon>FormFotoFicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoginUsuario.resx">
+      <DependentUpon>FormLoginUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNovasAtualizacoesTelaPrincipal.resx">
+      <DependentUpon>FormNovasAtualizacoesTelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTelaPrincipal.resx">
+      <DependentUpon>FormTelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmpresaCliente.resx">
+      <DependentUpon>FormEmpresaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmpresaClienteEditar.resx">
+      <DependentUpon>FormEmpresaClienteEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFichaSolicitacaoEmprego.resx">
+      <DependentUpon>FormFichaSolicitacaoEmprego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFichaSolicitacaoEmpregoEditar.resx">
+      <DependentUpon>FormFichaSolicitacaoEmpregoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPesquisaEmpresaCadastradaCliente.resx">
+      <DependentUpon>FormPesquisaEmpresaCadastradaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPesquisaFichaSolicitacaoEmprego.resx">
+      <DependentUpon>FormPesquisaFichaSolicitacaoEmprego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPesquisaProcessoSelecao.resx">
+      <DependentUpon>FormPesquisaProcessoSelecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcessoSelecao.resx">
+      <DependentUpon>FormProcessoSelecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProcessoSelecaoEditar.resx">
+      <DependentUpon>FormProcessoSelecaoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVerificadoCpfRg.resx">
+      <DependentUpon>FormVerificadoCpfRg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImagemMS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Logotipo da Empresa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Des.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
